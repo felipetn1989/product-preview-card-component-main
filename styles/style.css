@@ -161,7 +161,7 @@ p.perfume {
     margin-bottom: .3125rem;
 }
 
-.cart:hover {
+.cart:is(:hover, :focus) {
     cursor: pointer;
     background-color: #1a4031;
 }
