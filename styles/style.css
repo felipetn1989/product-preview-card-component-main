@@ -129,6 +129,7 @@ p.perfume {
 .price {
     display: flex;
     align-items: center;
+    gap: 1rem;
     margin-bottom: 1.3125rem;
 }
 
@@ -136,7 +137,6 @@ p.perfume {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
     color: var(--Dark-cyan);
-    margin-right: 1rem;
 }
 
 .old_price {
