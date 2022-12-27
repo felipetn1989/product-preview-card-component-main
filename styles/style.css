@@ -178,22 +178,14 @@ p.perfume {
 
 @media screen and (min-width:992px) {
     .card {
-        width: 570px;
-        display: flex;
-    }
-
-    div.image {
-        width: 60%;
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     img.bottle {
         height: 100%;
-        border-radius: 0.6125rem 0 0 .6125rem;
-    }
-
-    section.info {
-        width: 50%;
-        padding: 1.8725rem;
+        border-radius: .6125rem 0 0 .6125rem;
     }
 
     .info {
@@ -202,6 +194,5 @@ p.perfume {
         flex-direction: column;
         justify-content: space-between;
     }
-
 
 }
