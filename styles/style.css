@@ -1,0 +1,178 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Previous Versions
+v1.0 (200802)
+Acknowledgments
+Thanks to Paul Chaplin for the blockquote / q rules.*/
+
+:root {
+    /* ### Primary */
+
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+    /* ### Neutral */
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    width: 320px;
+    height: auto;
+    background-color: var(--White);
+    border-radius: .75rem;
+    margin-bottom: 1rem;
+}
+
+img.bottle {
+    width: 100%;
+    border-radius: .75rem .75rem 0 0;
+}
+
+p.perfume {
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .25rem;
+    margin-bottom: 1rem;
+}
+
+.info h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.9375rem;
+    color: var(--Very-dark-blue);
+    margin-bottom: 1rem;
+}
+
+.info {
+    padding: 1.375rem;
+    color: var(--Dark-grayish-blue);
+    font-size: .875rem;
+}
+
+.info .description {
+    line-height: 1.5rem;
+    margin-bottom: 1.3125rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3125rem;
+}
+
+.new_price {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: var(--Dark-cyan);
+    margin-right: 1rem;
+}
+
+.old_price {
+    font-size: .875rem;
+}
+
+.sr-only {
+    display: none;
+}
+
+.cart {
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    text-decoration: none;
+    font-size: .9125rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.25rem;
+    border-radius: .6125rem;
+    margin-bottom: .3125rem;
+}
+
+.cart:hover {
+    cursor: pointer;
+    background-color: #1a4031;
+}
+
+.cart_icon {
+    margin-right: .5rem;
+}
+
+.attribution {
+    font-size: .75rem;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
