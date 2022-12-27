@@ -92,6 +92,7 @@ body {
     background-color: var(--White);
     border-radius: .75rem;
     margin-bottom: 1rem;
+    transition: all .5s;
 }
 
 img.bottle {
@@ -175,4 +176,34 @@ p.perfume {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:992px) {
+    .card {
+        width: 570px;
+        display: flex;
+    }
+
+    div.image {
+        width: 60%;
+    }
+
+    img.bottle {
+        height: 100%;
+        border-radius: 0.6125rem 0 0 .6125rem;
+    }
+
+    section.info {
+        width: 50%;
+        padding: 1.8725rem;
+    }
+
+    .info {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
 }
