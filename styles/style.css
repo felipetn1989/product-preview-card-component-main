@@ -156,6 +156,7 @@ p.perfume {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: .5rem;
     height: 3.25rem;
     border-radius: .6125rem;
     margin-bottom: .3125rem;
@@ -164,10 +165,6 @@ p.perfume {
 .cart:is(:hover, :focus) {
     cursor: pointer;
     background-color: #1a4031;
-}
-
-.cart_icon {
-    margin-right: .5rem;
 }
 
 .attribution {
